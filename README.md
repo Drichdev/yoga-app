@@ -5,6 +5,9 @@
 
 A mobile application designed to provide therapeutic music experiences based on user moods and preferences, with personalized profiles and daily music recommendations.
 
+Download app : [Yoga](https://expo.dev/accounts/drichdev/projects/Yoga/builds/0a518dca-82bf-4e7b-9f5a-3752cc719834)
+
+
 ##  Features
 
 -  Mood-based music recommendations
@@ -14,7 +17,7 @@ A mobile application designed to provide therapeutic music experiences based on 
 -  In-app audio player
 -  Responsive design for all devices
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 ### Core Technologies
 - **Expo** - Development platform
