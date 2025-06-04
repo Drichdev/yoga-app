@@ -1,42 +1,63 @@
 {
   "expo": {
-    "name": "yoga-app",
-    "slug": "yoga-app",
+    "name": "Yoga",
+    "slug": "Yoga",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/icons/ios-Light.png",
     "scheme": "yogaapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundlerIndentifier": "getUniqueIdentifier()",
+      "config": {
+        "usesNonExemptEncryption": "false"
+      },
+      "icon": {
+        "dark": "./assets/icons/ios-Dark.png",
+        "light": "./assets/icons/ios-Light.png",
+        "tinted": "./assets/icons/ios-Tinted.png"
+      },
+      "bundleIdentifier": "com.anonymous.Yoga"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/icons/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.anonymous.Yoga"
     },
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/icons/ios-Light.png"
     },
     "plugins": [
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "image": "./assets/icons/splash-icon-dark.png",
           "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
+          "backgroundColor": "#ffffff",
+          "dark": {
+            "image": "./assets/icons/splash-icon-light.png",
+            "backgroundColor": "#000000"
+          }
         }
       ]
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "17556e80-4150-49bd-89e5-b7b53b5268cf"
+      }
     }
   }
 }
